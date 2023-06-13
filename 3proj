@@ -1,0 +1,20 @@
+     - lint
+      - build_cpu:
+          name: build_cpu_th1.6
+          torch: 1.6.0
+          torchvision: 0.7.0
+          requires:
+            - lint
+      - build_cpu:
+          name: build_cpu_th1.7
+          torch: 1.7.0
+          torchvision: 0.8.1
+          requires:
+            - lint
+      - build_cpu:
+          name: build_cpu_th1.8_py3.9
+          torch: 1.8.0
+          torchvision: 0.9.0
+          python: "3.9.0"
+          requires:
+            - lint
